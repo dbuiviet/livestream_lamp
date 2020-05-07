@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Live Stream Lamp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center|right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        >
+        <Button
+            android:id="@+id/bt_turnoff"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_background_red_dark_border"
+            android:text="Tắt"
+            />
+        <Button
+            android:id="@+id/bt_turnon"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_background_blue_dark_border"
+            android:text="Bật"
+            />
+
+        <Button
+            android:id="@+id/bt_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/icon_setting"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:id="@+id/content_frame"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/button_background_red_dark_border"
+                android:onClick="onSendAudioButtonClicked"
+                android:text="Send audio to server"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edt_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="-50dp"
+                android:hint="Enter message"
+                android:background="@color/colorAccent"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:id="@+id/tv_reply_from_server"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="50dp"
+                android:hint="Response from server"
+                android:background="@color/colorAccent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="85dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/button_background_red_dark_border"
+                android:onClick="onSendMessageButtonClicked"
+                android:text="Send message to server"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_marginTop="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Start server socket"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background_red_dark_border"
+                android:onClick="onTurnOnServerSocketButtonClicked"
+                android:layout_gravity="center|top"
+                />
+
+            <TextView
+                android:id="@+id/tv_data_from_client"
+                android:layout_marginTop="160dp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:onClick="onTurnOnServerSocketButtonClicked"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center|top"
+                />
+
+            <!--<Button-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginRight="75dp"-->
+                <!--android:layout_width="65dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:text="Turn Off"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:background="@drawable/button_background_blue_dark_border"-->
+                <!--android:onClick="onTurnOffButtonClicked"-->
+                <!--android:layout_gravity="top|right"-->
+                <!--/>-->
+
+
+
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LiveStreamLamp</string>
+
+    <!-- share preference keys -->
+    <string name="common_preference">common_preference</string>
+
+    <!-- general message -->
+    <string name="connect_internet_require_message">Bạn cần kết nối internet để thực hiện chức năng này</string>
+    <string name="connect_internet_alert_message">Bạn vui lòng kiểm tra kết nối Internet</string>
+
+
+</resources>
